@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "agents": {
+    "agents/analyzer.yml": {
+      "catalog_id": "gid://gitlab/Ai::Catalog::Item/1006936",
+      "name": "RedAgent Analyzer",
+      "created_at": "2026-03-24T21:04:13.330Z",
+      "item_consumers": {
+        "group": {
+          "id": "gid://gitlab/Ai::Catalog::ItemConsumer/5630312"
+        },
+        "project": {
+          "id": "gid://gitlab/Ai::Catalog::ItemConsumer/5630313"
+        }
+      },
+      "latest_sync": {
+        "git_tag": "v2",
+        "catalog_version": "1.1.0",
+        "synced_at": "2026-03-24T22:49:45.959Z",
+        "definition_hash": "fe2f42897ba51e67"
+      }
+    },
+    "agents/orchestrator.yml": {
+      "catalog_id": "gid://gitlab/Ai::Catalog::Item/1006937",
+      "name": "RedAgent Mocking Agent",
+      "created_at": "2026-03-24T21:04:14.228Z",
+      "item_consumers": {
+        "group": {
+          "id": "gid://gitlab/Ai::Catalog::ItemConsumer/5630314"
+        },
+        "project": {
+          "id": "gid://gitlab/Ai::Catalog::ItemConsumer/5630315"
+        }
+      },
+      "latest_sync": {
+        "git_tag": "v1",
+        "catalog_version": "1.0.0",
+        "synced_at": "2026-03-24T21:04:14.228Z",
+        "definition_hash": "2d187d8901295f42"
+      }
+    },
+    "agents/reporter.yml": {
+      "catalog_id": "gid://gitlab/Ai::Catalog::Item/1006938",
+      "name": "RedAgent Reporter",
+      "created_at": "2026-03-24T21:04:15.330Z",
+      "item_consumers": {
+        "group": {
+          "id": "gid://gitlab/Ai::Catalog::ItemConsumer/5630316"
+        },
+        "project": {
+          "id": "gid://gitlab/Ai::Catalog::ItemConsumer/5630317"
+        }
+      },
+      "latest_sync": {
+        "git_tag": "v1",
+        "catalog_version": "1.0.0",
+        "synced_at": "2026-03-24T21:04:15.330Z",
+        "definition_hash": "31f29ab696ed276d"
+      }
+    }
+  },
+  "flows": {
+    "flows/flow.yml": {
+      "catalog_id": "gid://gitlab/Ai::Catalog::Item/1006939",
+      "name": "RedAgent Adversarial Test Flow",
+      "created_at": "2026-03-24T21:04:16.194Z",
+      "item_consumers": {
+        "group": {
+          "id": "gid://gitlab/Ai::Catalog::ItemConsumer/5630318"
+        },
+        "project": {
+          "id": "gid://gitlab/Ai::Catalog::ItemConsumer/5630319"
+        }
+      },
+      "latest_sync": {
+        "git_tag": "v11",
+        "catalog_version": "1.10.0",
+        "synced_at": "2026-03-25T02:34:19.909Z",
+        "definition_hash": "c11bcb77982c9547"
+      }
+    }
+  }
+}

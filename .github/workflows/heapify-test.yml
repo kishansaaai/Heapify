@@ -1,0 +1,39 @@
+name: Heapify Security Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  heapify-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -e .
+
+      - name: Run Heapify Fuzz Test
+        env:
+          HEAPIFY_MODE: ON
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python -m examples.pa_agent.main
+
+      - name: Upload Heapify Database Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: heapify-db
+          path: heapify.db
+          retention-days: 7

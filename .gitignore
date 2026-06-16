@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+redAgent.db
+heapify.db
+
+# Node
+node_modules/
+.next/
+.env.local
