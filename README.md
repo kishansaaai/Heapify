@@ -155,6 +155,3 @@ heapify/
 - **Example Agent**: [`examples/pa_agent/`](examples/pa_agent/) — Fully instrumented demo
 
 ---
-
-**License**: MIT  
-**Maintainer**: AI Hackathon Participant
